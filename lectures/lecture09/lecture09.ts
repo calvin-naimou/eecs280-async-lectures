@@ -138,7 +138,7 @@ export const OPERATOR_OVERLOADING_AND_INHERITANCE : Omit<ExamSpecification, "exa
               // prints out the pixel in this format:
               //   rgb({R},{G},{B})
               ostream &operator<<(ostream &os, const Pixel &p) {
-                cout << "rgb(" << p.r << ", " << p.g
+                os << "rgb(" << p.r << ", " << p.g
                       << ", " << p.b << ")";
                 return os;
               }
